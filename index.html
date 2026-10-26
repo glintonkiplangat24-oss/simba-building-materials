@@ -3,71 +3,446 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Simba Building Materials | Order Online</title>
+
+<title>Simba Cement | Building Materials</title>
+
 <style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;background:#f4f6f8;color:#222}
-header
-<option>M-Pesa</option>
-<option>Discuss with the seller</option>
-</select>
+* {
+    box-sizing: border-box;
+}
 
-<label>Additional Instructions</label>
-<textarea id="notes" placeholder="Any other details about your order"></textarea>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f7f4;
+    color: #222;
+}
 
-<p class="small">Submitting this form requests a quotation. Your order is not confirmed until the seller confirms availability, prices, delivery charges, and payment instructions.</p>
+header {
+    background: #14532d;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
 
-<button type="button" onclick="sendWhatsApp()">Send Order via WhatsApp</button>
-<button type="button" onclick="sendEmail()">Send Order via Email</button>
-</form>
+header h1 {
+    margin: 0 0 10px;
+}
+
+header p {
+    margin: 5px 0;
+}
+
+nav {
+    background: #166534;
+    padding: 12px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+.hero {
+    padding: 25px 15px;
+    text-align: center;
+    background: #dcfce7;
+}
+
+.hero h2 {
+    color: #14532d;
+}
+
+.container {
+    max-width: 950px;
+    margin: auto;
+    padding: 18px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px #00000012;
+}
+
+h2 {
+    color: #14532d;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    background: #e5e7eb;
+}
+
+.product {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background: white;
+}
+
+.product p {
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-top: 14px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 16px;
+    background: white;
+}
+
+textarea {
+    min-height: 90px;
+}
+
+button, .button {
+    display: inline-block;
+    width: 100%;
+    padding: 14px;
+    margin-top: 14px;
+    border: none;
+    border-radius: 7px;
+    background: #15803d;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button:hover, .button:hover {
+    background: #166534;
+}
+
+.email-button {
+    background: #1d4ed8;
+}
+
+.contact {
+    overflow-wrap: anywhere;
+    line-height: 1.8;
+}
+
+footer {
+    background: #14532d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 25px;
+}
+
+.small {
+    font-size: 13px;
+    color: #555;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>SIMBA CEMENT</h1>
+    <p>Building Materials Ordering Service</p>
+    <p>Quality materials for your construction projects</p>
+</header>
+
+<nav>
+    <a href="#products">Products</a>
+    <a href="#order">Order Now</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+    <h2>Welcome to Simba Cement</h2>
+    <p>Order cement and building materials conveniently from your phone.</p>
+    <a href="#order" class="button" style="max-width:250px">
+        Place Your Order
+    </a>
 </section>
 
-<section class="card" id="contact">
-<h2>Contact Us</h2>
-<p><strong>WhatsApp:</strong> +254743721138</p>
-<p><strong>Email:</strong> tutudesmond877@gmail.com</p>
-<p>Contact us to confirm product prices, stock availability, delivery charges, and M-Pesa payment instructions.</p>
+<main class="container">
+
+<section class="card" id="products">
+    <h2>Our Products</h2>
+    <p>Browse our building materials and select what you need.</p>
+
+    <div class="gallery">
+
+        <div class="product">
+            <img src="images/cement1.jpg"
+                 alt="Cement bags"
+                 onerror="this.style.display='none'">
+            <p>Cement</p>
+        </div>
+
+        <div class="product">
+            <img src="images/cement2.jpg"
+                 alt="Building cement"
+                 onerror="this.style.display='none'">
+            <p>Building Cement</p>
+        </div>
+
+        <div class="product">
+            <img src="images/sand.jpg"
+                 alt="Construction sand"
+                 onerror="this.style.display='none'">
+            <p>Sand</p>
+        </div>
+
+        <div class="product">
+            <img src="images/ballast.jpg"
+                 alt="Construction ballast"
+                 onerror="this.style.display='none'">
+            <p>Ballast</p>
+        </div>
+
+        <div class="product">
+            <img src="images/blocks.jpg"
+                 alt="Building blocks"
+                 onerror="this.style.display='none'">
+            <p>Building Blocks</p>
+        </div>
+
+        <div class="product">
+            <img src="images/other-materials.jpg"
+                 alt="Other building materials"
+                 onerror="this.style.display='none'">
+            <p>Other Materials</p>
+        </div>
+
+    </div>
+
+    <p class="small">
+        Product prices and availability are confirmed by the seller.
+    </p>
 </section>
+
+<section class="card" id="order">
+    <h2>Place Your Order</h2>
+    <p>Complete this form with your order details.</p>
+
+    <form id="orderForm">
+
+        <label for="customer">Full Name *</label>
+        <input id="customer" name="customer"
+               type="text" required>
+
+        <label for="phone">Your Phone Number *</label>
+        <input id="phone" name="phone"
+               type="tel" required>
+
+        <label for="email">Your Email Address</label>
+        <input id="email" name="email"
+               type="email">
+
+        <label for="product">Select Building Material *</label>
+        <select id="product" name="product" required>
+            <option value="">Choose a product</option>
+            <option>Cement</option>
+            <option>Sand</option>
+            <option>Ballast</option>
+            <option>Building Blocks</option>
+            <option>Iron Sheets</option>
+            <option>Steel Bars</option>
+            <option>Roofing Materials</option>
+            <option>Other Building Materials</option>
+        </select>
+
+        <label for="quantity">Quantity Required *</label>
+        <input id="quantity" name="quantity"
+               type="number" min="1" required>
+
+        <label for="unit">Unit of Measurement</label>
+        <select id="unit" name="unit">
+            <option>Bags</option>
+            <option>Pieces</option>
+            <option>Tonnes</option>
+            <option>Trips</option>
+            <option>Other</option>
+        </select>
+
+        <label for="county">County *</label>
+        <input id="county" name="county"
+               type="text" required>
+
+        <label for="town">Town / Area *</label>
+        <input id="town" name="town"
+               type="text" required>
+
+        <label for="address">Delivery Address *</label>
+        <textarea id="address" name="address"
+                  required></textarea>
+
+        <label for="date">Preferred Delivery Date</label>
+        <input id="date" name="date" type="date">
+
+        <label for="delivery">Delivery Option</label>
+        <select id="delivery" name="delivery">
+            <option>Deliver to my location</option>
+            <option>I will collect the materials</option>
+            <option>Discuss with the seller</option>
+        </select>
+
+        <label for="payment">Preferred Payment Method</label>
+        <select id="payment" name="payment">
+            <option>M-Pesa</option>
+            <option>Bank Transfer</option>
+            <option>Cash on Delivery - subject to agreement</option>
+            <option>Discuss with the seller</option>
+        </select>
+
+        <label for="notes">Additional Instructions</label>
+        <textarea id="notes" name="notes"
+                  placeholder="Any other details about your order?"></textarea>
+
+        <label for="whatsapp">Send Order Through</label>
+        <select id="whatsapp" name="whatsapp">
+            <option value="254743721138">
+                WhatsApp 1: +254743721138
+            </option>
+            <option value="254721176291">
+                WhatsApp 2: +254721176291
+            </option>
+        </select>
+
+        <button type="button" onclick="sendWhatsApp()">
+            Send Order via WhatsApp
+        </button>
+
+        <button type="button" class="email-button"
+                onclick="sendEmail()">
+            Send Order via Email
+        </button>
+
+        <p class="small">
+            Submitting this form requests a quotation.
+            Your order is not confirmed until the seller
+            confirms availability, pricing and delivery.
+        </p>
+
+    </form>
+</section>
+
+<section class="card contact" id="contact">
+    <h2>Contact Simba Cement</h2>
+
+    <p><strong>WhatsApp 1:</strong>
+        <a href="https://wa.me/254743721138">
+            +254743721138
+        </a>
+    </p>
+
+    <p><strong>WhatsApp 2:</strong>
+        <a href="https://wa.me/254721176291">
+            +254721176291
+        </a>
+    </p>
+
+    <p><strong>Email:</strong>
+        <a href="mailto:simbacement@idf.ovh">
+            simbacement@idf.ovh
+        </a>
+    </p>
+
+    <p>
+        Contact us to confirm product prices, stock,
+        delivery charges and M-Pesa payment instructions.
+    </p>
+</section>
+
 </main>
 
 <footer>
-<p>© 2026 Simba Building Materials Ordering Service</p>
-<p>Independent building materials agent.</p>
+    <p>&copy; 2026 Simba Cement & Building Materials</p>
+    <p>Building Materials Ordering Service</p>
 </footer>
 
 <script>
-function getOrder(){
-const fields = [
-["Customer", "name"],
-["Phone", "phone"],
-["Email", "email"],
-["Product", "product"],
-["Quantity", "quantity"],
-["County", "county"],
-["Town/Area", "town"],
-["Delivery address", "address"],
-["Preferred delivery date", "date"],
-["Delivery option", "delivery"],
-["Payment method", "payment"],
-["Additional instructions", "notes"]
-];
-return "BUILDING MATERIALS QUOTATION REQUEST\n\n" +
-fields.map(([label,id]) => label + ": " +
-(document.getElementById(id).value || "Not provided")).join("\n");
+function getOrderDetails() {
+    const form = document.getElementById("orderForm");
+
+    if (!form.reportValidity()) {
+        return null;
+    }
+
+    const fields = [
+        ["Full Name", "customer"],
+        ["Phone Number", "phone"],
+        ["Email", "email"],
+        ["Product", "product"],
+        ["Quantity", "quantity"],
+        ["Unit", "unit"],
+        ["County", "county"],
+        ["Town / Area", "town"],
+        ["Delivery Address", "address"],
+        ["Preferred Delivery Date", "date"],
+        ["Delivery Option", "delivery"],
+        ["Payment Method", "payment"],
+        ["Additional Instructions", "notes"]
+    ];
+
+    return "SIMBA CEMENT - BUILDING MATERIALS ORDER\n\n" +
+        fields.map(function(field) {
+            const value = document.getElementById(field[1]).value.trim();
+            return field[0] + ": " + (value || "Not provided");
+        }).join("\n");
 }
-function sendWhatsApp(){
-if(!document.getElementById("orderForm").reportValidity()) return;
-const url = "https://wa.me/254743721138?text=" + encodeURIComponent(getOrder());
-window.open(url, "_blank");
+
+function sendWhatsApp() {
+    const message = getOrderDetails();
+
+    if (!message) return;
+
+    const number = document.getElementById("whatsapp").value;
+    const url = "https://wa.me/" + number +
+        "?text=" + encodeURIComponent(message);
+
+    window.open(url, "_blank");
 }
-function sendEmail(){
-if(!document.getElementById("orderForm").reportValidity()) return;
-const subject = encodeURIComponent("Building Materials Quotation Request");
-const body = encodeURIComponent(getOrder());
-window.location.href = "mailto:tutudesmond877@gmail.com?subject=" + subject + "&body=" + body;
+
+function sendEmail() {
+    const message = getOrderDetails();
+
+    if (!message) return;
+
+    const subject = encodeURIComponent(
+        "New Building Materials Order - Simba Cement"
+    );
+
+    const body = encodeURIComponent(message);
+
+    window.location.href =
+        "mailto:simbacement@idf.ovh?subject=" +
+        subject + "&body=" + body;
 }
 </script>
 
 </body>
-</html>
-  
+  </html>
